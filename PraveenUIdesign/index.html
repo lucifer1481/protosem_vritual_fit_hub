@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Fitting Room</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="top-left-buttons">
+      <button onclick="share()">Share</button>
+      <button onclick="download()">Download</button>
+    </div>
+    <h1>Virtual Fitting Room</h1>
+  </header>
+
+  <main class="layout">
+    <div class="left-panel">
+      <video id="webcam" autoplay playsinline></video>
+    </div>
+
+    <div class="right-panel">
+      <h2>Select Outfit</h2>
+      <div class="outfit-gallery">
+        <img src="https://toppng.com/uploads/preview/dress-shirt-png-pic-shirt-hd-11563574690borrmc2g5i.png" alt="Shirt" onclick="selectCloth('Shirt')" />
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/049/223/523/small/plain-black-t-shirt-ai-generative-free-png.png" alt="T-Shirt" onclick="selectCloth('T-Shirt')" />
+        <img src="https://png.pngtree.com/png-vector/20240612/ourlarge/pngtree-suit-and-tie-displayed-on-a-plain-png-image_12727744.png" alt="Coat Suit" onclick="selectCloth('Coat Suit')" />
+        <img src="https://i.pinimg.com/736x/ac/05/75/ac0575ad04bec6b508e63a08d7542d19.jpg" alt="Pant" onclick="selectCloth('Pant')" />
+        <img src="https://img.freepik.com/premium-psd/cargo-pants-men-with-plain-isolated-transparent-background_191095-17046.jpg" alt="Trouser" onclick="selectCloth('Trouser')" />
+        <img src="https://pngimg.com/d/jeans_PNG5745.png" alt="Casuals" onclick="selectCloth('Casuals')" />
+        <img src="https://www.pngmart.com/files/4/Floral-Dress-PNG-Picture.png" alt="Girls Dress 1" onclick="selectCloth('Girls Dress 1')" />
+        <img src="https://e7.pngegg.com/pngimages/759/172/png-clipart-dress-tunic-sleeve-casual-wear-blouse-dress-black-woman-thumbnail.png" alt="Girls Dress 2" onclick="selectCloth('Girls Dress 2')" />
+        <img src="https://img.lovepik.com/free-png/20211107/lovepik-ladies-dress-png-image_400493839_wh1200.png" alt="Girls Dress 3" onclick="selectCloth('Girls Dress 3')" />
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
